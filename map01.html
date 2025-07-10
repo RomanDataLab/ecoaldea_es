@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dc9633622fc3f52654ad0fdb35864540 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_dc9633622fc3f52654ad0fdb35864540" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_dc9633622fc3f52654ad0fdb35864540 = L.map(
+                "map_dc9633622fc3f52654ad0fdb35864540",
+                {
+                    center: [40.4168, -3.7038],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_dc9633622fc3f52654ad0fdb35864540);
+
+            
+
+        
+    
+            var tile_layer_70b58baf28e789ac6310ea2d42ae6eaf = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_70b58baf28e789ac6310ea2d42ae6eaf.addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+            var tile_layer_b60baccd7b182cb7aef393c5d62a6941 = L.tileLayer(
+                "Stamen Terrain",
+                {"attribution": "Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL.", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b60baccd7b182cb7aef393c5d62a6941.addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+            var circle_marker_6bd33ee0e1d724eb032a6c9d8b786558 = L.circleMarker(
+                [36.2130569, -5.9833116],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_f55e7a3b6b659f0d64a8263e11b74ceb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_419bc8e4e1625e029e7403a6fc9ad6b1 = $(`<div id="html_419bc8e4e1625e029e7403a6fc9ad6b1" style="width: 100.0%; height: 100.0%;">         <b>Avatar Dome Yoga Art</b><br>         Finca Villamon, Cádiz<br>         <b>IDEA:</b> Our goal and philosophy is living in harmony with nature.<br>         <a href="https://www.instagram.com/avatardomeyogaart" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 0  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_f55e7a3b6b659f0d64a8263e11b74ceb.setContent(html_419bc8e4e1625e029e7403a6fc9ad6b1);
+            
+        
+
+        circle_marker_6bd33ee0e1d724eb032a6c9d8b786558.bindPopup(popup_f55e7a3b6b659f0d64a8263e11b74ceb)
+        ;
+
+        
+    
+    
+            circle_marker_6bd33ee0e1d724eb032a6c9d8b786558.bindTooltip(
+                `<div>
+                     Avatar Dome Yoga Art
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3b1b25d3e585b16c86e87239a21e9607 = L.circleMarker(
+                [37.7841037, -5.9591489],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_31c17482df3539ba81d782dacf276abf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f089d5de0104ec2697622aae3c8d6039 = $(`<div id="html_f089d5de0104ec2697622aae3c8d6039" style="width: 100.0%; height: 100.0%;">         <b>Los Portales</b><br>         Castilblanco de los Arroyos, Sevilla<br>         <b>IDEA:</b> Create a safe frame in which each one can be shown in its entirety<br>         <a href="https://losportales.net/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 1  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_31c17482df3539ba81d782dacf276abf.setContent(html_f089d5de0104ec2697622aae3c8d6039);
+            
+        
+
+        circle_marker_3b1b25d3e585b16c86e87239a21e9607.bindPopup(popup_31c17482df3539ba81d782dacf276abf)
+        ;
+
+        
+    
+    
+            circle_marker_3b1b25d3e585b16c86e87239a21e9607.bindTooltip(
+                `<div>
+                     Los Portales
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bf6e73bd9ed4d524b2fe7166ecf42b9d = L.circleMarker(
+                [37.0442062, -2.1872277],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_522bd9e2566e03ba87a5b1895c5daa95 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d3bb2608663c3eb2946a008ae5081b2 = $(`<div id="html_6d3bb2608663c3eb2946a008ae5081b2" style="width: 100.0%; height: 100.0%;">         <b>oasisalhamam</b><br>         Lucainena de las Torres, Almería<br>         <b>IDEA:</b> An oasis of light, a life school and an inner trip, to discover who we are in a unique natural environment.<br>         <a href="https://oasisalhamam.com/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 2  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_522bd9e2566e03ba87a5b1895c5daa95.setContent(html_6d3bb2608663c3eb2946a008ae5081b2);
+            
+        
+
+        circle_marker_bf6e73bd9ed4d524b2fe7166ecf42b9d.bindPopup(popup_522bd9e2566e03ba87a5b1895c5daa95)
+        ;
+
+        
+    
+    
+            circle_marker_bf6e73bd9ed4d524b2fe7166ecf42b9d.bindTooltip(
+                `<div>
+                     oasisalhamam
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cab0d3256831e626eda57d2dc4d5e239 = L.circleMarker(
+                [36.037882, -5.5227279],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_240b464683f77886552a161a89f391bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_040778eeb14ef2013970c3c11794e6b3 = $(`<div id="html_040778eeb14ef2013970c3c11794e6b3" style="width: 100.0%; height: 100.0%;">         <b>Molino de Guadalmesí</b><br>         Aldea de Guadalmesí, Tarifa, Cádiz<br>         <b>IDEA:</b> Learning space through experience in a life laboratory.<br>         <a href="https://www.molinodeguadalmesi.com/qu%C3%A9-es-el-molino/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 3  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_240b464683f77886552a161a89f391bd.setContent(html_040778eeb14ef2013970c3c11794e6b3);
+            
+        
+
+        circle_marker_cab0d3256831e626eda57d2dc4d5e239.bindPopup(popup_240b464683f77886552a161a89f391bd)
+        ;
+
+        
+    
+    
+            circle_marker_cab0d3256831e626eda57d2dc4d5e239.bindTooltip(
+                `<div>
+                     Molino de Guadalmesí
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_06fc5583f9ca47c69f162f9fe20b9b21 = L.circleMarker(
+                [36.951375, -3.1341936],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_51cd58b1156adc581e2f6c6c4d6dbbf0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0209f0676655805a3dd86f02601377a1 = $(`<div id="html_0209f0676655805a3dd86f02601377a1" style="width: 100.0%; height: 100.0%;">         <b>Valle de Sensaciones(PARADO)</b><br>         Cádiar, Granada<br>         <b>IDEA:</b> Live creativity in sensual contact with nature.<br>         <a href="https://www.sensaciones.de/es/historia" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 4  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_51cd58b1156adc581e2f6c6c4d6dbbf0.setContent(html_0209f0676655805a3dd86f02601377a1);
+            
+        
+
+        circle_marker_06fc5583f9ca47c69f162f9fe20b9b21.bindPopup(popup_51cd58b1156adc581e2f6c6c4d6dbbf0)
+        ;
+
+        
+    
+    
+            circle_marker_06fc5583f9ca47c69f162f9fe20b9b21.bindTooltip(
+                `<div>
+                     Valle de Sensaciones(PARADO)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9843926636d0d108d265cb44a739a79a = L.circleMarker(
+                [37.8742587, -6.6799121],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_f96e8cda7487d60e07a1ead4a4913539 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccde3d9a32cf04d2d4a5866346fa019e = $(`<div id="html_ccde3d9a32cf04d2d4a5866346fa019e" style="width: 100.0%; height: 100.0%;">         <b>El Calabacino</b><br>         Alájar, Huelva<br>         <b>IDEA:</b> El Calabacino follows a traditional village model, each family has their own house and garden and is really independent from the others. The inhabitants are used to define themselves as a "family of families" instead of a community.<br>         <a href="http://www.theecovillageexperience.net/?ElCalabacino" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 5  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_f96e8cda7487d60e07a1ead4a4913539.setContent(html_ccde3d9a32cf04d2d4a5866346fa019e);
+            
+        
+
+        circle_marker_9843926636d0d108d265cb44a739a79a.bindPopup(popup_f96e8cda7487d60e07a1ead4a4913539)
+        ;
+
+        
+    
+    
+            circle_marker_9843926636d0d108d265cb44a739a79a.bindTooltip(
+                `<div>
+                     El Calabacino
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e0d45f7525047d4aa74eeaabaac8e2f8 = L.circleMarker(
+                [42.8724836, -1.3479951],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_c0c2707e21963dca8bca5478dc3ec4cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b67708d4863fb791c3192b8909b4da84 = $(`<div id="html_b67708d4863fb791c3192b8909b4da84" style="width: 100.0%; height: 100.0%;">         <b>Lakabe</b><br>         Lacabe, Navarra<br>         <b>IDEA:</b> Today, this project continues with this same essence: enable and experience utopia.<br>         <a href="https://www.lakabe.org/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 6  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_c0c2707e21963dca8bca5478dc3ec4cc.setContent(html_b67708d4863fb791c3192b8909b4da84);
+            
+        
+
+        circle_marker_e0d45f7525047d4aa74eeaabaac8e2f8.bindPopup(popup_c0c2707e21963dca8bca5478dc3ec4cc)
+        ;
+
+        
+    
+    
+            circle_marker_e0d45f7525047d4aa74eeaabaac8e2f8.bindTooltip(
+                `<div>
+                     Lakabe
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ed09ff045c000d100357f10fbda20b90 = L.circleMarker(
+                [40.1460078, -3.5294131],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_e96d7cd9db7b22c4c5242488ac06e640 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85309a96d3c0ec854d885b1cb4a2986d = $(`<div id="html_85309a96d3c0ec854d885b1cb4a2986d" style="width: 100.0%; height: 100.0%;">         <b>Aterra Bizimodu</b><br>         Artieda, Navarra<br>         <b>IDEA:</b> Another world is not only possible, but necessary<br>         <a href="https://arterrabizimodu.org/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 7  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_e96d7cd9db7b22c4c5242488ac06e640.setContent(html_85309a96d3c0ec854d885b1cb4a2986d);
+            
+        
+
+        circle_marker_ed09ff045c000d100357f10fbda20b90.bindPopup(popup_e96d7cd9db7b22c4c5242488ac06e640)
+        ;
+
+        
+    
+    
+            circle_marker_ed09ff045c000d100357f10fbda20b90.bindTooltip(
+                `<div>
+                     Aterra Bizimodu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0bc75f2a840c7899d00396b3693dde22 = L.circleMarker(
+                [40.1460078, -3.5294131],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_6ac43a37a91addd67a4f4a59a38dd2bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b100b3ddbf3169fc45c0ff57f87bfcc3 = $(`<div id="html_b100b3ddbf3169fc45c0ff57f87bfcc3" style="width: 100.0%; height: 100.0%;">         <b>Garaldea Ecofeminista</b><br>         Finca el Batán, Chinchón<br>         <b>IDEA:</b> Community of coexistence and ecofeminist learning<br>         <a href="https://somosgaraldea.com/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 8  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_6ac43a37a91addd67a4f4a59a38dd2bd.setContent(html_b100b3ddbf3169fc45c0ff57f87bfcc3);
+            
+        
+
+        circle_marker_0bc75f2a840c7899d00396b3693dde22.bindPopup(popup_6ac43a37a91addd67a4f4a59a38dd2bd)
+        ;
+
+        
+    
+    
+            circle_marker_0bc75f2a840c7899d00396b3693dde22.bindTooltip(
+                `<div>
+                     Garaldea Ecofeminista
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f6e16340ca1aa4926404ef010be00ba1 = L.circleMarker(
+                [40.7602567, -3.4697108],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_8c61adcfecabfdd58321708619037168 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5c4fa9cf067856e67e5c402038f5a6b = $(`<div id="html_e5c4fa9cf067856e67e5c402038f5a6b" style="width: 100.0%; height: 100.0%;">         <b>Ecoaldea Valdepiélagos(PARADO)</b><br>         Valdepiélagos, Madrid<br>         <b>IDEA:</b> environment that would minimize the negative impact on the environment<br>         <a href="https://www.ecoaldeavaldepielagos.org/nuestra-historia/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 9  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_8c61adcfecabfdd58321708619037168.setContent(html_e5c4fa9cf067856e67e5c402038f5a6b);
+            
+        
+
+        circle_marker_f6e16340ca1aa4926404ef010be00ba1.bindPopup(popup_8c61adcfecabfdd58321708619037168)
+        ;
+
+        
+    
+    
+            circle_marker_f6e16340ca1aa4926404ef010be00ba1.bindTooltip(
+                `<div>
+                     Ecoaldea Valdepiélagos(PARADO)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3e2dda1d9b421eb938462b82956c4d78 = L.circleMarker(
+                [41.8384983, 2.4981083],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_e3f4a06b7aac9040d390bb56fcfec84b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a3ca5c635c3e801accd6d7aa22c84db = $(`<div id="html_0a3ca5c635c3e801accd6d7aa22c84db" style="width: 100.0%; height: 100.0%;">         <b>TierraLuz</b><br>         Mas La Torre de Pujals, Arbucies, Gerona<br>         <b>IDEA:</b> cultivate a life in harmony with the Earth<br>         <a href="https://www.tierraluz.es/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 10  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_e3f4a06b7aac9040d390bb56fcfec84b.setContent(html_0a3ca5c635c3e801accd6d7aa22c84db);
+            
+        
+
+        circle_marker_3e2dda1d9b421eb938462b82956c4d78.bindPopup(popup_e3f4a06b7aac9040d390bb56fcfec84b)
+        ;
+
+        
+    
+    
+            circle_marker_3e2dda1d9b421eb938462b82956c4d78.bindTooltip(
+                `<div>
+                     TierraLuz
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_191a62ede7fe74a9cc68cedb774829f4 = L.circleMarker(
+                [42.0967965, 2.4427611],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_b975e6bcc77920514f3479ad4138ed7a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0bd863386ed20aee231696161c18334d = $(`<div id="html_0bd863386ed20aee231696161c18334d" style="width: 100.0%; height: 100.0%;">         <b>Mas Franch(PARADO)</b><br>         Sant Feliu de Pallerois, Gerona<br>         <b>IDEA:</b> Education, sustainability promotion, generation of encounters, exchange of experiences and formations in different areas.<br>         <a href="http://www.andruxai.org/mas-franch/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 11  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_b975e6bcc77920514f3479ad4138ed7a.setContent(html_0bd863386ed20aee231696161c18334d);
+            
+        
+
+        circle_marker_191a62ede7fe74a9cc68cedb774829f4.bindPopup(popup_b975e6bcc77920514f3479ad4138ed7a)
+        ;
+
+        
+    
+    
+            circle_marker_191a62ede7fe74a9cc68cedb774829f4.bindTooltip(
+                `<div>
+                     Mas Franch(PARADO)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d168f7af1c1b87912e894cfa2a11a531 = L.circleMarker(
+                [41.4457819, 2.1572597],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_40f89454a80ee4d66f66b2163a5bdd53 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ee58553b832af90d377e3d34b9afeb8 = $(`<div id="html_4ee58553b832af90d377e3d34b9afeb8" style="width: 100.0%; height: 100.0%;">         <b>Can Masdéu</b><br>         Camí Sant Llàtzer, Barcelona<br>         <b>IDEA:</b> An act of creative disobedience to the world of money, smoke and ordinances, noise and speed.<br>         <a href="https://canmasdeu.net/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 12  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_40f89454a80ee4d66f66b2163a5bdd53.setContent(html_4ee58553b832af90d377e3d34b9afeb8);
+            
+        
+
+        circle_marker_d168f7af1c1b87912e894cfa2a11a531.bindPopup(popup_40f89454a80ee4d66f66b2163a5bdd53)
+        ;
+
+        
+    
+    
+            circle_marker_d168f7af1c1b87912e894cfa2a11a531.bindTooltip(
+                `<div>
+                     Can Masdéu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_eec82305948ecaf401d7b1f4642526fa = L.circleMarker(
+                [39.5693674, -0.62722],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_9e19fea98ff526e6261b160e2d264667 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49c445c50f39bf12e8d2d8026a088bcd = $(`<div id="html_49c445c50f39bf12e8d2d8026a088bcd" style="width: 100.0%; height: 100.0%;">         <b>Ecoaldea Shakti</b><br>         Villamarchante, Valencia<br>         <b>IDEA:</b> Without too much reflection or demands, there was only a premise, being sustainable.<br>         <a href="https://ecoaldeashakti.blogspot.com/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 13  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_9e19fea98ff526e6261b160e2d264667.setContent(html_49c445c50f39bf12e8d2d8026a088bcd);
+            
+        
+
+        circle_marker_eec82305948ecaf401d7b1f4642526fa.bindPopup(popup_9e19fea98ff526e6261b160e2d264667)
+        ;
+
+        
+    
+    
+            circle_marker_eec82305948ecaf401d7b1f4642526fa.bindTooltip(
+                `<div>
+                     Ecoaldea Shakti
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0b24c064a7562b766bf7595272667f8f = L.circleMarker(
+                [38.186211, -0.6764978],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_11e46936f5e5e53e4f654f00e40926e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_88990b8e8205e8a1eb3ded2b3011201e = $(`<div id="html_88990b8e8205e8a1eb3ded2b3011201e" style="width: 100.0%; height: 100.0%;">         <b>Biovives</b><br>         Partida de la Foia, Alicante<br>         <b>IDEA:</b> Meeting space and personal growth<br>         <a href="http://www.biovives.org/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 14  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_11e46936f5e5e53e4f654f00e40926e3.setContent(html_88990b8e8205e8a1eb3ded2b3011201e);
+            
+        
+
+        circle_marker_0b24c064a7562b766bf7595272667f8f.bindPopup(popup_11e46936f5e5e53e4f654f00e40926e3)
+        ;
+
+        
+    
+    
+            circle_marker_0b24c064a7562b766bf7595272667f8f.bindTooltip(
+                `<div>
+                     Biovives
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e6341a3d13e372d8a1990b337466fb37 = L.circleMarker(
+                [39.538016, -0.936053],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_1dae984d3eba5cc875822b32961124f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd20df0afc1f727416d6ebd262f2b565 = $(`<div id="html_cd20df0afc1f727416d6ebd262f2b565" style="width: 100.0%; height: 100.0%;">         <b>El Nido Feliz(PARADO)</b><br>         Siete Aguas, Valencia<br>         <b>IDEA:</b> We live in harmony with nature by applying the work principles and methods of permaculture.<br>         <a href="https://elnidofeliz.net/es/inicio/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 15  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_1dae984d3eba5cc875822b32961124f8.setContent(html_cd20df0afc1f727416d6ebd262f2b565);
+            
+        
+
+        circle_marker_e6341a3d13e372d8a1990b337466fb37.bindPopup(popup_1dae984d3eba5cc875822b32961124f8)
+        ;
+
+        
+    
+    
+            circle_marker_e6341a3d13e372d8a1990b337466fb37.bindTooltip(
+                `<div>
+                     El Nido Feliz(PARADO)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d618f73a8f8008099d256a31921c6235 = L.circleMarker(
+                [39.7296259, -0.5056045],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_307cc976806288dc436a57eee4c27b61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6201785a868c2a4bd523eaf3d029fa2f = $(`<div id="html_6201785a868c2a4bd523eaf3d029fa2f" style="width: 100.0%; height: 100.0%;">         <b>Aldea de Olla(PARADO)</b><br>         Aldea de la Olla, Valencia<br>         <b>IDEA:</b> Rehabilitation and enhancement of historical, cultural and environmental heritage<br>         <a href="https://www.facebook.com/Reviscolla/?locale=es_ES" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 16  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_307cc976806288dc436a57eee4c27b61.setContent(html_6201785a868c2a4bd523eaf3d029fa2f);
+            
+        
+
+        circle_marker_d618f73a8f8008099d256a31921c6235.bindPopup(popup_307cc976806288dc436a57eee4c27b61)
+        ;
+
+        
+    
+    
+            circle_marker_d618f73a8f8008099d256a31921c6235.bindTooltip(
+                `<div>
+                     Aldea de Olla(PARADO)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_685fdc8af1effd6b3d037cff5d64ace1 = L.circleMarker(
+                [40.9292957, 0.1998106],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_91d628286b738432ed6fab2c3d91ab61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_669646984f11198f849f0f437b64a33d = $(`<div id="html_669646984f11198f849f0f437b64a33d" style="width: 100.0%; height: 100.0%;">         <b>Kurkum Farm Eco Vida</b><br>         Cretas, Teruel<br>         <b>IDEA:</b> Individual and collective empowerment, within a framework of respect for the planet and all beings living in it.<br>         <a href="http://kurkumfarmecovida.blogspot.com/p/asociacion-eco-vida.html" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 17  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_91d628286b738432ed6fab2c3d91ab61.setContent(html_669646984f11198f849f0f437b64a33d);
+            
+        
+
+        circle_marker_685fdc8af1effd6b3d037cff5d64ace1.bindPopup(popup_91d628286b738432ed6fab2c3d91ab61)
+        ;
+
+        
+    
+    
+            circle_marker_685fdc8af1effd6b3d037cff5d64ace1.bindTooltip(
+                `<div>
+                     Kurkum Farm Eco Vida
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_231be6ba3746bf9e2f57b36847184153 = L.circleMarker(
+                [40.8128847, 0.0694739],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_5f021652944b2188713851cf3b4e6535 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_284db4707a40fdb190dde96257acc687 = $(`<div id="html_284db4707a40fdb190dde96257acc687" style="width: 100.0%; height: 100.0%;">         <b>La Bioescuela Mayjal</b><br>         Fuentespalda, Teruel<br>         <b>IDEA:</b> We share all the experiences that we carry out in our peculiar agricultural exploitation.<br>         <a href="https://www.labioescuela.com/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 18  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_5f021652944b2188713851cf3b4e6535.setContent(html_284db4707a40fdb190dde96257acc687);
+            
+        
+
+        circle_marker_231be6ba3746bf9e2f57b36847184153.bindPopup(popup_5f021652944b2188713851cf3b4e6535)
+        ;
+
+        
+    
+    
+            circle_marker_231be6ba3746bf9e2f57b36847184153.bindTooltip(
+                `<div>
+                     La Bioescuela Mayjal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f2bfa0ff6bd636ea6df4fc4edb15815f = L.circleMarker(
+                [42.0964244, 0.3387906],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_6d1f31cec426c2787285b2e0e71a5598 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccfed8ffbadad15ea6c5b7bb5252528c = $(`<div id="html_ccfed8ffbadad15ea6c5b7bb5252528c" style="width: 100.0%; height: 100.0%;">         <b>Aguinaliu(PARADO)</b><br>         Aguinaliu, Huesca<br>         <b>IDEA:</b> We live about twenty neighbors all year and some more, in summer.<br>         <a href="http://www.aguinaliu.es/index_archivos/Page390.htm" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 19  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_6d1f31cec426c2787285b2e0e71a5598.setContent(html_ccfed8ffbadad15ea6c5b7bb5252528c);
+            
+        
+
+        circle_marker_f2bfa0ff6bd636ea6df4fc4edb15815f.bindPopup(popup_6d1f31cec426c2787285b2e0e71a5598)
+        ;
+
+        
+    
+    
+            circle_marker_f2bfa0ff6bd636ea6df4fc4edb15815f.bindTooltip(
+                `<div>
+                     Aguinaliu(PARADO)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_37eb3d1b3725be1ba8797f20498e071b = L.circleMarker(
+                [42.4258927, -0.2618232],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_2973643cef677eff89d28799ea58406e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e625dbbd58dca692f877aab2d07186e = $(`<div id="html_6e625dbbd58dca692f877aab2d07186e" style="width: 100.0%; height: 100.0%;">         <b>Artosilla – Selba Vida Sostenible(PARADO)</b><br>         Artosilla – Sabiñánigo, Huesca<br>         <b>IDEA:</b> We recovered a cultural heritage that was being lost with enduring initiatives in the rural world.<br>         <a href="http://www.selba.org/selba/selba/selbab.html" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 20  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_2973643cef677eff89d28799ea58406e.setContent(html_6e625dbbd58dca692f877aab2d07186e);
+            
+        
+
+        circle_marker_37eb3d1b3725be1ba8797f20498e071b.bindPopup(popup_2973643cef677eff89d28799ea58406e)
+        ;
+
+        
+    
+    
+            circle_marker_37eb3d1b3725be1ba8797f20498e071b.bindTooltip(
+                `<div>
+                     Artosilla – Selba Vida Sostenible(PARADO)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_87c5989bb794cec6fe3f053c52fde26f = L.circleMarker(
+                [42.3921143, -0.1929484],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_4c7467d1e0aa8109125b650f3ed2e7a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1183db9c4d499f5b1d7c93402167d86f = $(`<div id="html_1183db9c4d499f5b1d7c93402167d86f" style="width: 100.0%; height: 100.0%;">         <b>Aineto – La Vieja Cadiera(PARADO)</b><br>         Aineto, Huesca<br>         <b>IDEA:</b> It arises with the idea of ​​looking for alternative ways of relating and living in a more natural environment.<br>         <a href="nan" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 21  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_4c7467d1e0aa8109125b650f3ed2e7a8.setContent(html_1183db9c4d499f5b1d7c93402167d86f);
+            
+        
+
+        circle_marker_87c5989bb794cec6fe3f053c52fde26f.bindPopup(popup_4c7467d1e0aa8109125b650f3ed2e7a8)
+        ;
+
+        
+    
+    
+            circle_marker_87c5989bb794cec6fe3f053c52fde26f.bindTooltip(
+                `<div>
+                     Aineto – La Vieja Cadiera(PARADO)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_938b08dca86115b494105a58757da846 = L.circleMarker(
+                [42.4359811, -0.524297],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_acfebe4ab2242c9517e4d4f1b2c066b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93c089147f89803b022d369bd37a1497 = $(`<div id="html_93c089147f89803b022d369bd37a1497" style="width: 100.0%; height: 100.0%;">         <b>Sieso de Jaca(PARADO)</b><br>         Sieso de Jaca, Huesca<br>         <b>IDEA:</b> The day to day, the people who inhabit this town do so.<br>         <a href="nan" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 22  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_acfebe4ab2242c9517e4d4f1b2c066b9.setContent(html_93c089147f89803b022d369bd37a1497);
+            
+        
+
+        circle_marker_938b08dca86115b494105a58757da846.bindPopup(popup_acfebe4ab2242c9517e4d4f1b2c066b9)
+        ;
+
+        
+    
+    
+            circle_marker_938b08dca86115b494105a58757da846.bindTooltip(
+                `<div>
+                     Sieso de Jaca(PARADO)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2d33abe5e5ad7079e9fb2ccd03f54ce2 = L.circleMarker(
+                [28.16669, -16.503484],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_e64b62868848f49cad87e9d99157e302 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_743d033c5a004880c6cef05b5d0be871 = $(`<div id="html_743d033c5a004880c6cef05b5d0be871" style="width: 100.0%; height: 100.0%;">         <b>AVA Canaria</b><br>         Villa de Arico, Santa Cruz de Tenerife<br>         <b>IDEA:</b> ENVIRONMENTAL ENVIRONMENTAL CULTURAL ASSOCIATION<br>         <a href="https://avacanaria.org/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 23  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_e64b62868848f49cad87e9d99157e302.setContent(html_743d033c5a004880c6cef05b5d0be871);
+            
+        
+
+        circle_marker_2d33abe5e5ad7079e9fb2ccd03f54ce2.bindPopup(popup_e64b62868848f49cad87e9d99157e302)
+        ;
+
+        
+    
+    
+            circle_marker_2d33abe5e5ad7079e9fb2ccd03f54ce2.bindTooltip(
+                `<div>
+                     AVA Canaria
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ce10399298b9d91bb87993c08b1bd8c1 = L.circleMarker(
+                [28.0790775, -17.3232116],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_2d2f5f97406e4655f5e9ae75638d0e7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_830695fae8c78082062990f0101f2792 = $(`<div id="html_830695fae8c78082062990f0101f2792" style="width: 100.0%; height: 100.0%;">         <b>Finca Argayall</b><br>         Ferrocarril Argaga, Santa Cruz de Tenerife<br>         <b>IDEA:</b> Try community life, learn new tools and know yourself in a new way.<br>         <a href="https://www.argayall.com/en/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 24  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_2d2f5f97406e4655f5e9ae75638d0e7b.setContent(html_830695fae8c78082062990f0101f2792);
+            
+        
+
+        circle_marker_ce10399298b9d91bb87993c08b1bd8c1.bindPopup(popup_2d2f5f97406e4655f5e9ae75638d0e7b)
+        ;
+
+        
+    
+    
+            circle_marker_ce10399298b9d91bb87993c08b1bd8c1.bindTooltip(
+                `<div>
+                     Finca Argayall
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_12122adbba80707e65a4b465679d4e82 = L.circleMarker(
+                [28.549609, -16.3495454],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_763507c407932abedadb0c272e3edbae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a4dc077fe0d30fd76d2c870b26afc51 = $(`<div id="html_3a4dc077fe0d30fd76d2c870b26afc51" style="width: 100.0%; height: 100.0%;">         <b>8thLife(PARADO)</b><br>         La Laguna, Santa Cruz de Tenerife<br>         <b>IDEA:</b> area full of biodiversity and productivity according to the ethics and principles of permaculture.<br>         <a href="https://www.facebook.com/groups/8thLife/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 25  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_763507c407932abedadb0c272e3edbae.setContent(html_3a4dc077fe0d30fd76d2c870b26afc51);
+            
+        
+
+        circle_marker_12122adbba80707e65a4b465679d4e82.bindPopup(popup_763507c407932abedadb0c272e3edbae)
+        ;
+
+        
+    
+    
+            circle_marker_12122adbba80707e65a4b465679d4e82.bindTooltip(
+                `<div>
+                     8thLife(PARADO)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6d5304ace21d33aac4d35877a7bfce2f = L.circleMarker(
+                [43.2352486, -3.220464],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_ae41e85c184ce510b0a5df54d538d870 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80bdf44b794e998b7a29f6403b4bd41e = $(`<div id="html_80bdf44b794e998b7a29f6403b4bd41e" style="width: 100.0%; height: 100.0%;">         <b>Amalurra(PARADO)</b><br>         Barrio la Reneja, Bizkaia<br>         <b>IDEA:</b> The seed was created in the 90s, within the first women of women that Irene Goikolea summoned<br>         <a href="http://amalurra.eus/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 26  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_ae41e85c184ce510b0a5df54d538d870.setContent(html_80bdf44b794e998b7a29f6403b4bd41e);
+            
+        
+
+        circle_marker_6d5304ace21d33aac4d35877a7bfce2f.bindPopup(popup_ae41e85c184ce510b0a5df54d538d870)
+        ;
+
+        
+    
+    
+            circle_marker_6d5304ace21d33aac4d35877a7bfce2f.bindTooltip(
+                `<div>
+                     Amalurra(PARADO)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7fb746a83fd3c5324eab2dd926599772 = L.circleMarker(
+                [42.5371245, -6.3737143],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_2a2ad5ecba1782ba92e5b7320a4bdae5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_837159c6ffc1cd9af88bf8e785e06aca = $(`<div id="html_837159c6ffc1cd9af88bf8e785e06aca" style="width: 100.0%; height: 100.0%;">         <b>Matavenero</b><br>         Torre del Bierzo, León<br>         <b>IDEA:</b> We live together as a very heterogeneous group of people, both in nationalities and ideologies, interests, ways of living and feeling the world.<br>         <a href="https://matavenero.net/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 27  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_2a2ad5ecba1782ba92e5b7320a4bdae5.setContent(html_837159c6ffc1cd9af88bf8e785e06aca);
+            
+        
+
+        circle_marker_7fb746a83fd3c5324eab2dd926599772.bindPopup(popup_2a2ad5ecba1782ba92e5b7320a4bdae5)
+        ;
+
+        
+    
+    
+            circle_marker_7fb746a83fd3c5324eab2dd926599772.bindTooltip(
+                `<div>
+                     Matavenero
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_aafafa19eb6138439f2f38c61d76f491 = L.circleMarker(
+                [42.0952751, -2.1725825],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_a4b77ae6cf1b658f2364cb96c4c4b4e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf08e292c1e9ae33638f1c091667fbc2 = $(`<div id="html_cf08e292c1e9ae33638f1c091667fbc2" style="width: 100.0%; height: 100.0%;">         <b>Amigos de Armejún(PARADO)</b><br>         Armejún, Soria<br>         <b>IDEA:</b> They have made the people look good again and be a pleasant place.<br>         <a href="https://www.facebook.com/armejun/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 28  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_a4b77ae6cf1b658f2364cb96c4c4b4e5.setContent(html_cf08e292c1e9ae33638f1c091667fbc2);
+            
+        
+
+        circle_marker_aafafa19eb6138439f2f38c61d76f491.bindPopup(popup_a4b77ae6cf1b658f2364cb96c4c4b4e5)
+        ;
+
+        
+    
+    
+            circle_marker_aafafa19eb6138439f2f38c61d76f491.bindTooltip(
+                `<div>
+                     Amigos de Armejún(PARADO)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4b7d18d7c3e20101e3e35dcd50ce0224 = L.circleMarker(
+                [40.4980955, -4.4327308],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_c369bf666df7f388609c19fff61ea429 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34235be2f610f37ba8fa76b75dbc7e1c = $(`<div id="html_34235be2f610f37ba8fa76b75dbc7e1c" style="width: 100.0%; height: 100.0%;">         <b>Valle Despierta(PARADO)</b><br>         El Hoyo de Pinares, Ávila<br>         <b>IDEA:</b> Because ... any excuse is good to celebrate.<br>         <a href="https://ecovillage.org/project/el-valle-despierta/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 29  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_c369bf666df7f388609c19fff61ea429.setContent(html_34235be2f610f37ba8fa76b75dbc7e1c);
+            
+        
+
+        circle_marker_4b7d18d7c3e20101e3e35dcd50ce0224.bindPopup(popup_c369bf666df7f388609c19fff61ea429)
+        ;
+
+        
+    
+    
+            circle_marker_4b7d18d7c3e20101e3e35dcd50ce0224.bindTooltip(
+                `<div>
+                     Valle Despierta(PARADO)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b32e593ff0636fb04e7f04e1c586e7fb = L.circleMarker(
+                [41.4551534, -2.1703866],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_ac01834c14ede9c392e7f3b632b0abc1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e0c24d262fa1ecb769ad083d185fe013 = $(`<div id="html_e0c24d262fa1ecb769ad083d185fe013" style="width: 100.0%; height: 100.0%;">         <b>Torlengua – Molinos de Resilencia(PARADO)</b><br>         Torlengua, Soria<br>         <b>IDEA:</b> We cover bioconstruction issues, clean energy, ecological livestock, agriculture ...<br>         <a href="https://molinos-de-resiliencia.webnode.es/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 30  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_ac01834c14ede9c392e7f3b632b0abc1.setContent(html_e0c24d262fa1ecb769ad083d185fe013);
+            
+        
+
+        circle_marker_b32e593ff0636fb04e7f04e1c586e7fb.bindPopup(popup_ac01834c14ede9c392e7f3b632b0abc1)
+        ;
+
+        
+    
+    
+            circle_marker_b32e593ff0636fb04e7f04e1c586e7fb.bindTooltip(
+                `<div>
+                     Torlengua – Molinos de Resilencia(PARADO)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_094d07b9d2e8f26471e1aa829fb37c0c = L.circleMarker(
+                [40.9848384, -3.0984772],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_425e63c34573e4b9d62f7fc2b77c3db5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c492c282b506bee1a01d1862724a5b38 = $(`<div id="html_c492c282b506bee1a01d1862724a5b38" style="width: 100.0%; height: 100.0%;">         <b>Fraguas(DESALOJO)</b><br>         Monasterio, Guadalajara<br>         <b>IDEA:</b> community, self-government, self-sufficiency and self-management<br>         <a href="https://fraguasrevive.blogspot.com/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 31  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_425e63c34573e4b9d62f7fc2b77c3db5.setContent(html_c492c282b506bee1a01d1862724a5b38);
+            
+        
+
+        circle_marker_094d07b9d2e8f26471e1aa829fb37c0c.bindPopup(popup_425e63c34573e4b9d62f7fc2b77c3db5)
+        ;
+
+        
+    
+    
+            circle_marker_094d07b9d2e8f26471e1aa829fb37c0c.bindTooltip(
+                `<div>
+                     Fraguas(DESALOJO)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e8d4b50b1a21bac47d019bd3ab42a478 = L.circleMarker(
+                [43.4775863, -6.8764068],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_920b097a1d87d00956b83c2832f99733 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3cb7ff0702b96238ad95d1fc933fb65d = $(`<div id="html_3cb7ff0702b96238ad95d1fc933fb65d" style="width: 100.0%; height: 100.0%;">         <b>AGRhumus(PARADO)</b><br>         La Cabana, Boal, Ecoaldea Asturias<br>         <b>IDEA:</b> It is born from the passion and certainty of knowing that agroecology is an economically, environmentally and socially healthy alternative, which generates viable opportunities in communities.<br>         <a href="https://www.facebook.com/AGRhumus.redes" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 32  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_920b097a1d87d00956b83c2832f99733.setContent(html_3cb7ff0702b96238ad95d1fc933fb65d);
+            
+        
+
+        circle_marker_e8d4b50b1a21bac47d019bd3ab42a478.bindPopup(popup_920b097a1d87d00956b83c2832f99733)
+        ;
+
+        
+    
+    
+            circle_marker_e8d4b50b1a21bac47d019bd3ab42a478.bindTooltip(
+                `<div>
+                     AGRhumus(PARADO)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e0c1b2ade3e5ad4ae304a050f970e4bb = L.circleMarker(
+                [39.0095997, 1.472348],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_c4cf3e9eaa86ff86f8bd34092c4d9a6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87c2c530c8121103b7e913f343cb3c7c = $(`<div id="html_87c2c530c8121103b7e913f343cb3c7c" style="width: 100.0%; height: 100.0%;">         <b>FalconBlanco(PARADO)</b><br>         Sant Joan de Labritja, Ibiza<br>         <b>IDEA:</b> Stepping outside of old vestiges of the thinking pattern and worn out attitudes and behavior.<br>         <a href="https://falconblanco-gardnering.webnode.page/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 33  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_c4cf3e9eaa86ff86f8bd34092c4d9a6e.setContent(html_87c2c530c8121103b7e913f343cb3c7c);
+            
+        
+
+        circle_marker_e0c1b2ade3e5ad4ae304a050f970e4bb.bindPopup(popup_c4cf3e9eaa86ff86f8bd34092c4d9a6e)
+        ;
+
+        
+    
+    
+            circle_marker_e0c1b2ade3e5ad4ae304a050f970e4bb.bindTooltip(
+                `<div>
+                     FalconBlanco(PARADO)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_48eddb009d7779e253d6cbd786ddec97 = L.circleMarker(
+                [42.4914441, -7.6260412],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_1427c6b8128ef7f59cffb3f94a1d7ac4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff8b1b61a81d96dbac95c8857f403bd7 = $(`<div id="html_ff8b1b61a81d96dbac95c8857f403bd7" style="width: 100.0%; height: 100.0%;">         <b>Tanquián Ecofinca(PARADO)</b><br>         Pantón, Lugo<br>         <b>IDEA:</b> We live from the earth, we work based on permaculture principles.<br>         <a href="https://tanquian.es/es/acerca-de-nosotros/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 34  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_1427c6b8128ef7f59cffb3f94a1d7ac4.setContent(html_ff8b1b61a81d96dbac95c8857f403bd7);
+            
+        
+
+        circle_marker_48eddb009d7779e253d6cbd786ddec97.bindPopup(popup_1427c6b8128ef7f59cffb3f94a1d7ac4)
+        ;
+
+        
+    
+    
+            circle_marker_48eddb009d7779e253d6cbd786ddec97.bindTooltip(
+                `<div>
+                     Tanquián Ecofinca(PARADO)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5437ced5b9ad1cc254cde1de8675dd9b = L.circleMarker(
+                [42.7193534, -7.305737],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_833cccd999b4053bfd59665162c7d038 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e012d5c1a6f4aaca76c4f49c64338ad = $(`<div id="html_8e012d5c1a6f4aaca76c4f49c64338ad" style="width: 100.0%; height: 100.0%;">         <b>Proyecto O’Couso(PARADO)</b><br>         Samos, Lugo<br>         <b>IDEA:</b> comprehensive and open community, for everyone, where the values ​​of the New Ethical Culture are put into practice.<br>         <a href="https://proyectocouso.org/introduccion/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 35  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_833cccd999b4053bfd59665162c7d038.setContent(html_8e012d5c1a6f4aaca76c4f49c64338ad);
+            
+        
+
+        circle_marker_5437ced5b9ad1cc254cde1de8675dd9b.bindPopup(popup_833cccd999b4053bfd59665162c7d038)
+        ;
+
+        
+    
+    
+            circle_marker_5437ced5b9ad1cc254cde1de8675dd9b.bindTooltip(
+                `<div>
+                     Proyecto O’Couso(PARADO)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_72977c34a56055c9c862174db0a778c2 = L.circleMarker(
+                [28.3700348, -16.7224374],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_4ea966ade50361016ef369a92dd3a2f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0dd53c9b78dea315ddd67f8c1d207973 = $(`<div id="html_0dd53c9b78dea315ddd67f8c1d207973" style="width: 100.0%; height: 100.0%;">         <b>Ilatán</b><br>         Icod de los Vinos, Santa Cruz de Tenerife<br>         <b>IDEA:</b> Here we restore the ecosystem, produce food and try to live in a quiet and happy way.<br>         <a href="https://proyecto.ilatan.org/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 36  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_4ea966ade50361016ef369a92dd3a2f8.setContent(html_0dd53c9b78dea315ddd67f8c1d207973);
+            
+        
+
+        circle_marker_72977c34a56055c9c862174db0a778c2.bindPopup(popup_4ea966ade50361016ef369a92dd3a2f8)
+        ;
+
+        
+    
+    
+            circle_marker_72977c34a56055c9c862174db0a778c2.bindTooltip(
+                `<div>
+                     Ilatán
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0c4d0d7fd78e5eba855254f2498f7a3d = L.circleMarker(
+                [38.712, -0.1911389],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_cab43ef6b461b39ca81849d5c3f8c814 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dfc36e8a3ddcd2fcc992bb24d2809640 = $(`<div id="html_dfc36e8a3ddcd2fcc992bb24d2809640" style="width: 100.0%; height: 100.0%;">         <b>KAnanda</b><br>         Castell de Castells, Alicante<br>         <b>IDEA:</b> Intentional community focused on interconnection, nature, healing, permaculture, biodiversity and sustainability.<br>         <a href="https://www.k-ananda.com/?lang=es" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 37  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_cab43ef6b461b39ca81849d5c3f8c814.setContent(html_dfc36e8a3ddcd2fcc992bb24d2809640);
+            
+        
+
+        circle_marker_0c4d0d7fd78e5eba855254f2498f7a3d.bindPopup(popup_cab43ef6b461b39ca81849d5c3f8c814)
+        ;
+
+        
+    
+    
+            circle_marker_0c4d0d7fd78e5eba855254f2498f7a3d.bindTooltip(
+                `<div>
+                     KAnanda
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d376ddcfca883e222f294fa24d1c0bcb = L.circleMarker(
+                [39.3601268, -7.2716518],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_0fc5b5179f10d75540bc4dbdcbf2b6e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af36797637bc1964db1afc4283996bae = $(`<div id="html_af36797637bc1964db1afc4283996bae" style="width: 100.0%; height: 100.0%;">         <b>La Rosina – Ecovillage(PARADO)</b><br>         Las Huertas de Cansa, Cáceres<br>         <b>IDEA:</b> Not only do we produce our food, we make people live an experience.<br>         <a href="https://larosinaecovillage.wordpress.com/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 38  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_0fc5b5179f10d75540bc4dbdcbf2b6e6.setContent(html_af36797637bc1964db1afc4283996bae);
+            
+        
+
+        circle_marker_d376ddcfca883e222f294fa24d1c0bcb.bindPopup(popup_0fc5b5179f10d75540bc4dbdcbf2b6e6)
+        ;
+
+        
+    
+    
+            circle_marker_d376ddcfca883e222f294fa24d1c0bcb.bindTooltip(
+                `<div>
+                     La Rosina – Ecovillage(PARADO)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b931a19b15d89d5b699c11d3cc3738c7 = L.circleMarker(
+                [43.4229946, -7.1364332],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_da03332bb3b8fb64af225b618402f743 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30f68b5b3f8ba00bbae3f4d365777d37 = $(`<div id="html_30f68b5b3f8ba00bbae3f4d365777d37" style="width: 100.0%; height: 100.0%;">         <b>Savia</b><br>         frontera entre Galicia y Asturias, valle del Eo, Asturia<br>         <b>IDEA:</b> Founded with the vision of creating a home where all living beings are respected and live in harmony with nature, Savia combines ecological architecture, permaculture, and a lifestyle based on veganism and self-sufficiency.<br>         <a href="https://www.saviaecoaldeavegana.com/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 39  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_da03332bb3b8fb64af225b618402f743.setContent(html_30f68b5b3f8ba00bbae3f4d365777d37);
+            
+        
+
+        circle_marker_b931a19b15d89d5b699c11d3cc3738c7.bindPopup(popup_da03332bb3b8fb64af225b618402f743)
+        ;
+
+        
+    
+    
+            circle_marker_b931a19b15d89d5b699c11d3cc3738c7.bindTooltip(
+                `<div>
+                     Savia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6ddea6df14957ab8ec7488d9682d986b = L.circleMarker(
+                [36.92701, -4.190316],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_8eee433118085ac388dd115b898744fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c66e1522b420d2c61646fa3bcabe35de = $(`<div id="html_c66e1522b420d2c61646fa3bcabe35de" style="width: 100.0%; height: 100.0%;">         <b>iki Gaya</b><br>         Periana , Malaga<br>         <b>IDEA:</b> We are a group of people from all generations who have chosen to live in the countryside in alignment with our values. We dedicate ourselves to growing as a community, regenerating Pachamama, and being guardians of this corner of Gaia—240 hectares of land that nurtures and sustains us. <br>         <a href="https://semillamontealegre.es  " target="_blank">Visit Link</a>         <br><b>Row ID:</b> 40  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_8eee433118085ac388dd115b898744fe.setContent(html_c66e1522b420d2c61646fa3bcabe35de);
+            
+        
+
+        circle_marker_6ddea6df14957ab8ec7488d9682d986b.bindPopup(popup_8eee433118085ac388dd115b898744fe)
+        ;
+
+        
+    
+    
+            circle_marker_6ddea6df14957ab8ec7488d9682d986b.bindTooltip(
+                `<div>
+                     iki Gaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b4f1f13a90f41c505c6c08a54dceba88 = L.circleMarker(
+                [41.9445253, 1.8793626],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_05c6e44df1324c35b254313a7ec77678 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ada83ff489996883c531d81f1cc11af7 = $(`<div id="html_ada83ff489996883c531d81f1cc11af7" style="width: 100.0%; height: 100.0%;">         <b>Vidàlia </b><br>         Berguedà , Barcelona<br>         <b>IDEA:</b> Members maintain common social and political values, fostering a lifestyle focused on collaboration and shared goals.<br>         <a href="https://www.vidalia.coop/inici/" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 41  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_05c6e44df1324c35b254313a7ec77678.setContent(html_ada83ff489996883c531d81f1cc11af7);
+            
+        
+
+        circle_marker_b4f1f13a90f41c505c6c08a54dceba88.bindPopup(popup_05c6e44df1324c35b254313a7ec77678)
+        ;
+
+        
+    
+    
+            circle_marker_b4f1f13a90f41c505c6c08a54dceba88.bindTooltip(
+                `<div>
+                     Vidàlia
+
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cf49fbb0718ac705fd90ea2e79d9a09c = L.circleMarker(
+                [42.5020283, -0.0345764],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_1adc25ab92b625dee3561fbedebbb9e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_15983fd5fa35f2dff35b4622ad98ef2d = $(`<div id="html_15983fd5fa35f2dff35b4622ad98ef2d" style="width: 100.0%; height: 100.0%;">         <b>Giral</b><br>         Giral, Huesca<br>         <b>IDEA:</b> We are an intentional community located in the Aragonese Pre-Pyrenees, surrounded by pine and oak forests.<br>         <a href="https://www.worldpackers.com/es/positions/88800/details" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 42  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_1adc25ab92b625dee3561fbedebbb9e4.setContent(html_15983fd5fa35f2dff35b4622ad98ef2d);
+            
+        
+
+        circle_marker_cf49fbb0718ac705fd90ea2e79d9a09c.bindPopup(popup_1adc25ab92b625dee3561fbedebbb9e4)
+        ;
+
+        
+    
+    
+            circle_marker_cf49fbb0718ac705fd90ea2e79d9a09c.bindTooltip(
+                `<div>
+                     Giral
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5cd43433682ecfc4b9446bb3e7054f54 = L.circleMarker(
+                [37.9418808, -2.1743408],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0.5, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_dc9633622fc3f52654ad0fdb35864540);
+        
+    
+        var popup_9f27d2708801970340533426026548a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4334b7d1054c2f9afc327c43ba4c13be = $(`<div id="html_4334b7d1054c2f9afc327c43ba4c13be" style="width: 100.0%; height: 100.0%;">         <b>Camp Altiplano </b><br>         La Junquera , Murcia<br>         <b>IDEA:</b> first initiative of the Ecosystem Restoration Camps Foundation <br>         <a href="https://www.ecosystemrestorationcommunities.org/community/camp-altiplano-spain" target="_blank">Visit Link</a>         <br><b>Row ID:</b> 43  <!-- This is the unique ID to identify the row -->     </div>`)[0];
+                popup_9f27d2708801970340533426026548a3.setContent(html_4334b7d1054c2f9afc327c43ba4c13be);
+            
+        
+
+        circle_marker_5cd43433682ecfc4b9446bb3e7054f54.bindPopup(popup_9f27d2708801970340533426026548a3)
+        ;
+
+        
+    
+    
+            circle_marker_5cd43433682ecfc4b9446bb3e7054f54.bindTooltip(
+                `<div>
+                     Camp Altiplano 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
